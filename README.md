@@ -15,15 +15,16 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 | `career-goals.html` | Career goals / ECE Roadmap |
 | `projects.html` | Technical project samples (scalable) |
 | `discovery-project.html` | **Discovery Project Feature** |
+| `pc-building.html` | Additional project feature |
 | `contact.html` | Additional section — contact |
 
 ## Still to add
 
-- [ ] `assets/img/portrait.jpg` — replace placeholder with a real portrait
-- [ ] `assets/img/about-hero.jpg` — replace placeholder
+- [x] ~~portrait~~ (cropped from campus photo — a solo headshot would be better)
+- [x] ~~about hero~~ (campus photo)
 - [ ] `assets/img/project-build.jpg` — **own photo of the Discovery Project (required)**
-- [ ] `assets/files/Thomas-Nguyen-Resume.pdf` — resume PDF for the download button
-- [ ] Real email address and LinkedIn URL (currently placeholders)
+- [x] ~~resume PDF~~
+- [x] ~~email and LinkedIn~~
 - [ ] Discovery Project results section + showcase video embed
 - [ ] Delete every `callout--todo` block before submitting
 
