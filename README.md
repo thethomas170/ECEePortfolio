@@ -17,13 +17,10 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 
 ## Still to add
 
-- [x] ~~portrait~~ (professional headshot)
-- [x] ~~about hero~~ (campus photo)
-- [ ] `assets/img/project-build.jpg` — **own photo of the Discovery Project (required)**
-- [x] ~~resume PDF~~
-- [x] ~~email and LinkedIn~~
-- [ ] Discovery Project results section + showcase video embed
-- [ ] Delete every `callout--todo` block before submitting
+- [ ] Own photo of the Screen-Time Alert build (required by the Showcase)
+- [ ] Screen-Time Alert results and showcase video
+- [ ] Bring the Screen-Time Alert section back to 400+ words
+- [ ] Career Goals section (required component)
 
 ## Editing
 
