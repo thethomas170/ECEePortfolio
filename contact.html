@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Thomas Nguyen</title>
+<meta name="description" content="Get in touch with Thomas Nguyen, Electrical Engineering student at Georgia Tech.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Thomas Nguyen<span>Electrical Engineering &middot; Georgia Tech</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="career-goals.html">Career Goals</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <div class="wrap">
+      <div class="prose">
+        <p class="eyebrow">Connect</p>
+        <h1 style="margin-top:0">Get in touch</h1>
+        <p class="lede">I am actively looking for research opportunities, internships, and
+          conversations with engineers working in power delivery and electrical construction.
+          If you are hiring, recruiting for a VIP team, or willing to talk about your own path
+          in the industry, I would genuinely like to hear from you.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card card--accent">
+          <p class="card__meta">Email</p>
+          <h3>Direct</h3>
+          <p>The most reliable way to reach me.</p>
+          <p><a href="mailto:ADD_YOUR_EMAIL">[add the email address you want public]</a></p>
+        </article>
+        <article class="card card--accent">
+          <p class="card__meta">Professional</p>
+          <h3>LinkedIn</h3>
+          <p>Where I keep my professional profile current.</p>
+          <p><a href="#" data-needs="linkedin">[add your LinkedIn URL]</a></p>
+        </article>
+        <article class="card card--accent">
+          <p class="card__meta">Code</p>
+          <h3>GitHub</h3>
+          <p>Project code, including the source for this site.</p>
+          <p><a href="https://github.com/thethomas170" target="_blank" rel="noopener">github.com/thethomas170</a></p>
+        </article>
+      </div>
+
+      <div class="prose">
+        <h2>What I am looking for</h2>
+        <ul>
+          <li><strong>VIP teams</strong> working on power delivery, grid infrastructure, or
+            power electronics for Spring 2027.</li>
+          <li><strong>Summer 2027 internships</strong> in electrical construction, utility
+            engineering, or project management on large-scale electrical work.</li>
+          <li><strong>Informational conversations</strong> with engineers and project managers
+            in the power sector. I ask good questions and I follow up.</li>
+        </ul>
+      </div>
+
+      <div class="callout callout--todo">
+        <p class="callout__label">Draft note &mdash; delete before submitting</p>
+        <p>Two things to decide here. First, which email you want on a public page &mdash; a
+          lot of students use their <code>@gatech.edu</code> address rather than a personal
+          one. Second, your LinkedIn URL, which also appears in the footer of every page.
+          Send both and I will wire them in everywhere.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h3>Thomas Nguyen</h3>
+      <ul>
+        <li>B.S. Electrical Engineering, Class of 2030</li>
+        <li>Georgia Institute of Technology</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Portfolio</h3>
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="career-goals.html">Career Goals</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="contact.html">Contact page</a></li>
+        <li><a href="#" data-needs="linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/thethomas170">GitHub</a></li>
+      </ul>
+    </div>
+    <p class="fine">&copy; 2026 Thomas Nguyen &middot; ECE ePortfolio, Georgia Institute of Technology</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>
