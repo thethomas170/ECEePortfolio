@@ -37,37 +37,135 @@
           each semester.</p>
       </div>
 
-      <div class="grid" style="margin-top:2rem">
+      <div class="prose" id="screen-time-alert">
+        <h2>Screen-Time Alert</h2>
+        <p><strong>ECE 1100 Discovery Project &middot; Fall 2026 &middot; Raspberry Pi, Python</strong></p>
 
-        <a class="card card--link card--accent" href="discovery-project.html">
-          <p class="card__meta">ECE 1100 &middot; Fall 2026</p>
-          <h3>Screen-Time Alert</h3>
-          <p>A Raspberry Pi device that tracks gaming sessions on the PC I built and flashes a
-            light when I pass my limit.</p>
-          <p class="card__more">Read more &rarr;</p>
-        </a>
+        <h3>The Problem</h3>
+        <p>I spend more time gaming than I mean to. I sit down to play for an hour after class
+          and look up three hours later. I tried screen-time apps and timers, but they all had
+          the same weakness: the alert shows up on the same screen as the game, and I can close
+          it with one click. I got very good at closing them.</p>
+        <p>So I set a different goal. Instead of another pop-up, I wanted a reminder outside the
+          screen, in the room with me, that I could not click away.</p>
 
-        <a class="card card--link card--accent" href="pc-building.html">
-          <p class="card__meta">Fall 2024 &ndash; Fall 2025</p>
-          <h3>PC Building &amp; Community Outreach</h3>
-          <p>Researched, built, and troubleshot my own gaming PC with no prior experience, then
-            built three more for people in Banks County.</p>
-          <p class="card__more">Read more &rarr;</p>
-        </a>
+        <h3>The Process</h3>
+        <p>I already had a Raspberry Pi, so I built the project around it. The Pi sits on my
+          desk next to my gaming PC and runs on its own. Because it is a separate device, I
+          cannot close it from the computer I am playing on.</p>
+        <p>The system has three parts. First, it detects when a game is running and how long I
+          have been playing. Second, it compares that time to the limit I set. Third, it turns
+          on an LED through the Pi&rsquo;s GPIO pins, and the light blinks faster the longer I
+          go past my limit.</p>
+      </div>
 
-        <article class="card card--accent">
-          <p class="card__meta">Nov 2024 &ndash; Jan 2025</p>
-          <h3>Clubhouse Build</h3>
-          <p>Designed and built a poker clubhouse with five friends on a $2,000 budget.</p>
-        </article>
+      <figure>
+        <svg viewBox="0 0 860 260" role="img" aria-labelledby="blockdiag-title" style="width:100%;height:auto;background:#f7f5f0;border:1px solid #e2e0d9;border-radius:10px;display:block">
+          <title id="blockdiag-title">System block diagram: gaming PC sends session status to a Raspberry Pi, which drives an LED alert circuit</title>
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+              <path d="M0,0 L10,4 L0,8 Z" fill="#003057"></path>
+            </marker>
+          </defs>
+          <!-- PC -->
+          <rect x="30" y="80" width="190" height="100" rx="8" fill="#fff" stroke="#003057" stroke-width="2"></rect>
+          <text x="125" y="120" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="#003057">Gaming PC</text>
+          <text x="125" y="145" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a5159">session status</text>
+          <text x="125" y="163" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a5159">(process / uptime)</text>
+          <!-- arrow 1 -->
+          <line x1="225" y1="130" x2="320" y2="130" stroke="#003057" stroke-width="2" marker-end="url(#arrow)"></line>
+          <text x="272" y="118" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#b3a369" font-weight="bold">network</text>
+          <!-- Pi -->
+          <rect x="325" y="60" width="210" height="140" rx="8" fill="#003057" stroke="#003057" stroke-width="2"></rect>
+          <text x="430" y="100" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="#ffffff">Raspberry Pi</text>
+          <text x="430" y="126" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#d6cba5">Python timer logic</text>
+          <text x="430" y="146" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#d6cba5">threshold compare</text>
+          <text x="430" y="166" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#d6cba5">GPIO output</text>
+          <!-- arrow 2 -->
+          <line x1="540" y1="130" x2="635" y2="130" stroke="#003057" stroke-width="2" marker-end="url(#arrow)"></line>
+          <text x="587" y="118" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#b3a369" font-weight="bold">GPIO</text>
+          <!-- LED circuit -->
+          <rect x="640" y="80" width="190" height="100" rx="8" fill="#fff" stroke="#b3a369" stroke-width="3"></rect>
+          <text x="735" y="118" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="bold" fill="#003057">Alert Circuit</text>
+          <text x="735" y="142" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a5159">resistor + LED</text>
+          <text x="735" y="160" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a5159">escalating blink</text>
+          <!-- labels -->
+          <text x="125" y="215" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#4a5159">1. Detection</text>
+          <text x="430" y="230" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#4a5159">2. Decision</text>
+          <text x="735" y="215" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#4a5159">3. Output</text>
+        </svg>
+        <figcaption>How the Screen-Time Alert works. Diagram by Thomas Nguyen.</figcaption>
+      </figure>
 
-        <article class="card card--accent">
-          <p class="card__meta">ECE 1100 &middot; Fall 2026</p>
-          <h3>ECE Deep Dive</h3>
-          <p>A presentation on the power transformer shortage and Georgia Tech&rsquo;s modular
-            controllable transformer.</p>
-        </article>
+      <div class="prose">
+        <p>The code was not the hardest part. The harder questions were about the hardware and
+          about me: how bright the light should be, how fast it should blink, and where it should
+          sit so I would notice it without covering it up. I also had to calculate the right
+          resistor for the LED instead of guessing. I built it in stages and tested each one:
+          first blinking an LED, then the timer, then connecting it to my real PC.</p>
 
+        <h3>The Outcome</h3>
+        <p>When the light starts blinking, the reminder is in the room and not on the screen.
+          Ignoring it means choosing to sit next to a flashing light, which is much harder than
+          closing a pop-up. That small bit of friction is the whole point of the project.</p>
+        <p>I learned three things. Restating a problem can matter more than improving the
+          solution: every app I tried counted time well, but none of them got the message to me.
+          A physical object gets attention in a way software does not. And this was the first
+          time I picked a part from a calculation, wired it, and watched it work the way the math
+          said it would.</p>
+      </div>
+
+      <div class="callout callout--todo">
+        <p class="callout__label">To finish before the Showcase</p>
+        <p>Add a photo of the Pi and LED that you took yourself (required), your real results,
+          and the showcase video. Send them to me and I will put them in.</p>
+      </div>
+
+      <div class="prose" id="pc-build">
+        <h2>Gaming PC Build</h2>
+        <p>This is the first computer I ever built, and it is the PC the Screen-Time Alert
+          monitors. I researched every component myself, learned which parts work together, and
+          assembled it with no prior experience.</p>
+        <p>It did not go smoothly. At one point I thought everything was lost, and I had to
+          troubleshoot my way back to a working computer. That taught me to slow down and test
+          one thing at a time.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:1.5rem 0">
+        <figure style="margin:0">
+          <img src="assets/img/pc-build-rgb.jpg" alt="The finished gaming PC with RGB lighting on">
+          <figcaption>The finished build.</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <img src="assets/img/pc-build-open.jpg" alt="Inside of the PC with the lighting off, showing the cooler, memory and fans">
+          <figcaption>Inside the case.</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <img src="assets/img/pc-bench.jpg" alt="Motherboard with the CPU cooler and memory installed before going into the case">
+          <figcaption>Cooler and memory installed on the motherboard.</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <img src="assets/img/pc-wiring.jpg" alt="Hand holding cables next to the fan and lighting hub behind the motherboard">
+          <figcaption>Wiring the fan and lighting hub.</figcaption>
+        </figure>
+      </div>
+
+      <div class="prose">
+        <h2>Banks County Community Tech Outreach</h2>
+        <p><strong>Fall 2024 &ndash; Fall 2025</strong></p>
+        <p>After my own build, I built and set up three PCs for members of my community and
+          taught them how to use and take care of their computers. I also helped elderly
+          neighbors with their laptops.</p>
+
+        <h2>Clubhouse Build</h2>
+        <p><strong>November 2024 &ndash; January 2025</strong></p>
+        <p>I designed and built a poker clubhouse with five friends. We drew up the measurements
+          and plans, did the cutting and assembly ourselves, and stayed within a $2,000 budget.</p>
+
+        <h2>ECE Deep Dive</h2>
+        <p><strong>ECE 1100 &middot; Fall 2026</strong></p>
+        <p>I gave a four-minute presentation on the shortage of large power transformers and the
+          modular controllable transformer being developed at Georgia Tech.</p>
       </div>
     </div>
   </section>

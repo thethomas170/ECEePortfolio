@@ -12,9 +12,7 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 | `index.html` | Welcome / summary statement |
 | `about.html` | Biography / About Me |
 | `resume.html` | Resume — PDF download |
-| `projects.html` | Technical project samples (scalable) |
-| `discovery-project.html` | **Discovery Project Feature** |
-| `pc-building.html` | Additional project feature |
+| `projects.html` | All projects on one page, including the **Discovery Project Feature** |
 | `contact.html` | Additional section — contact |
 
 ## Still to add
@@ -56,8 +54,7 @@ Which file holds what:
 
 - Home page text → `index.html`
 - Your biography → `about.html`
-- Discovery Project write-up → `discovery-project.html`
-- PC building project → `pc-building.html`
+- All projects → `projects.html`
 - Resume text on the page → `resume.html`
 - Contact details → `contact.html`
 
