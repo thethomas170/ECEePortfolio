@@ -11,8 +11,7 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 |---|---|
 | `index.html` | Welcome / summary statement |
 | `about.html` | Biography / About Me |
-| `resume.html` | Resume — viewable and downloadable |
-| `career-goals.html` | Career goals / ECE Roadmap |
+| `resume.html` | Resume — PDF download |
 | `projects.html` | Technical project samples (scalable) |
 | `discovery-project.html` | **Discovery Project Feature** |
 | `pc-building.html` | Additional project feature |
@@ -59,7 +58,6 @@ Which file holds what:
 - Your biography → `about.html`
 - Discovery Project write-up → `discovery-project.html`
 - PC building project → `pc-building.html`
-- Career goals / roadmap → `career-goals.html`
 - Resume text on the page → `resume.html`
 - Contact details → `contact.html`
 
