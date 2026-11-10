@@ -20,7 +20,7 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 
 ## Still to add
 
-- [x] ~~portrait~~ (cropped from campus photo — a solo headshot would be better)
+- [x] ~~portrait~~ (professional headshot)
 - [x] ~~about hero~~ (campus photo)
 - [ ] `assets/img/project-build.jpg` — **own photo of the Discovery Project (required)**
 - [x] ~~resume PDF~~
