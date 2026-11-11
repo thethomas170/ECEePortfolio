@@ -19,8 +19,6 @@ Static HTML/CSS, no build step, hosted with GitHub Pages.
 
 - [ ] Own photo of the Screen-Time Alert build (required by the Showcase)
 - [ ] Screen-Time Alert results and showcase video
-- [ ] Bring the Screen-Time Alert section back to 400+ words
-- [ ] Career Goals section (required component)
 
 ## Editing
 
